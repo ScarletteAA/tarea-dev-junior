@@ -18,9 +18,26 @@ function calculatePanels(
   roofWidth: number,
   roofHeight: number
 ): number {
-  // Implementa acá tu solución
+  const calculateFit = (w1: number, h1: number, w2: number, h2: number): number => 
+    Math.floor(w2 / w1) * Math.floor(h2 / h1);
+
+  const hybridFit = (pw: number, ph: number, rw: number, rh: number): number => {
+    const base = calculateFit(pw, ph, rw, rh);
+    const usedWidth = Math.floor(rw / pw) * pw;
+    const usedHeight = Math.floor(rh / ph) * ph;
+    const freeWidth = rw - usedWidth;
+    const freeHeight = rh - usedHeight;
+    const extra = Math.max(
+      calculateFit(ph, pw, freeWidth, rh),
+      calculateFit(pw, ph, rw, freeHeight)
+    );
+    return base + extra;
+  };
+
+  const normal = hybridFit(panelWidth, panelHeight, roofWidth, roofHeight);
+  const rotated = hybridFit(panelHeight, panelWidth, roofWidth, roofHeight);
   
-  return 0;
+  return Math.max(normal, rotated);
 }
 
 function main(): void {

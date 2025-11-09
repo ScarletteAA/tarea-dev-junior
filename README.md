@@ -10,17 +10,11 @@ El problema a resolver consiste en encontrar la máxima cantidad de rectángulos
 
 ## 🚀 Cómo Empezar
 
-### Opción 1: Solución en TypeScript
+###  Solución en TypeScript
 ```bash
 cd typescript
 npm install
 npm start
-```
-
-### Opción 2: Solución en Python
-```bash
-cd python
-python3 main.py
 ```
 
 ## ✅ Casos de Prueba
@@ -32,31 +26,8 @@ Tu solución debe pasar los siguientes casos de prueba:
 
 ---
 
-## 📝 Tu Solución
+## 📝 Vídeo
 
-Deja acá el link a tu video explicando tu solución con tus palabras
-
----
-
-## 💰 Bonus (Opcional)
-
-Si completaste alguno de los ejercicios bonus, explica tu solución aquí:
-
-### Bonus Implementado
-*[Indica cuál bonus implementaste: Opción 1 (techo triangular) o Opción 2 (rectángulos superpuestos)]*
-
-
-
-
-### Explicación del Bonus
-*[Explica cómo adaptaste tu algoritmo para resolver el bonus]*
-
-
-
+(https://www.loom.com/share/2db27f62735f470691904c6dd7224019)
 
 ---
-
-## 🤔 Supuestos y Decisiones
-
-*[Si tuviste que tomar algún supuesto o decisión de diseño, explícalo aquí]*
-
